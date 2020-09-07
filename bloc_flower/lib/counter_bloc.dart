@@ -15,6 +15,7 @@ class CounterBloc {
   //helps map out the input to get it to the stream
 
   CounterBloc(){
+    //if a new event comes in then the function map the event to a new state
     _counterEventController.stream.listen(_mapEventToState);
   }
 

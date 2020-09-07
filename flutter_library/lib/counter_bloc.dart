@@ -1,4 +1,4 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_library/counter_event.dart';
 import 'package:flutter_library/counter_state.dart';
 
@@ -26,4 +26,7 @@ class CounterBloc extends Bloc<CounterEvent, CounterState>{
       yield currentState..counter -= 1;
     }
   }
+
+
+  void dispatch(IncrementEvent incrementEvent) {}
 }
