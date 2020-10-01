@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "86869930745",
+    "firebase_url": "https://fireboost1-985ca.firebaseio.com",
+    "project_id": "fireboost1-985ca",
+    "storage_bucket": "fireboost1-985ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86869930745:android:51b08e8392e1bc641c6828",
+        "android_client_info": {
+          "package_name": "hubertle.fireboost_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86869930745-mfj1pncnuin89dr9m5fcih0t1v8kcfdh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hubertle.fireboost_1",
+            "certificate_hash": "58dc8677be85f108f188a17919753a61d1670427"
+          }
+        },
+        {
+          "client_id": "86869930745-vnopn39ka7f3ljlt19b8llur5j4k1h5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8NxsQ_OhVYYwKl0h7qKKl56zxtPw0NJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86869930745-vnopn39ka7f3ljlt19b8llur5j4k1h5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
