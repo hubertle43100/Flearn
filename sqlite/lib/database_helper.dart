@@ -40,8 +40,8 @@ class DatabaseHelper{ //everything static to give class access to variables
   }
 
   Future _onCreate(Database db, int version){
-     db.query( //create table inside the query
-       '''
+     db.execute( //create table inside the query (change query to execute)
+        '''
        CREATE TABLE $_tableName( 
        $columnId INTEGER PRIMARY KEY,
        $columnName TEXT NOT NULL)
