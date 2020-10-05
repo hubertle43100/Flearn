@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "863427028480",
+    "firebase_url": "https://flessons-83069.firebaseio.com",
+    "project_id": "flessons-83069",
+    "storage_bucket": "flessons-83069.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863427028480:android:8fed0dace067e738bb9ae5",
+        "android_client_info": {
+          "package_name": "hubertle.flesson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863427028480-2cpht5bgbp44skr5cftk9sma5gme1lbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hubertle.flesson",
+            "certificate_hash": "58dc8677be85f108f188a17919753a61d1670427"
+          }
+        },
+        {
+          "client_id": "863427028480-18613cq8timjiqg918l1qb2a8dq3or8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8VBJ-yLTJRfSkgC1bIrLOE79iSx8Y9wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863427028480-18613cq8timjiqg918l1qb2a8dq3or8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

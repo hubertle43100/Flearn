@@ -11,6 +11,10 @@ class DatabaseHelper{ //everything static to give class access to variables
   //about database
   static final _dbName = "myDatabase.db";
   static final _dbVersion = 1;
+  static final _tableName = 'myTable';
+
+  static final columnId = '_id';
+  static final columnName = 'name';
 
   DatabaseHelper._privateConstructor();  //singleton class
   static final DatabaseHelper instance = DatabaseHelper._privateConstructor();
@@ -36,7 +40,34 @@ class DatabaseHelper{ //everything static to give class access to variables
   }
 
   Future _onCreate(Database db, int version){
-    
+     db.query( //create table inside the query
+       '''
+       CREATE TABLE $_tableName( 
+       $columnId INTEGER PRIMARY KEY,
+       $columnName TEXT NOT NULL)
+       '''
+     );
+  }
+
+  Future<int> insert(Map<String, dynamic> row) async{ //id: #### unique to each person (use int)
+    Database db = await instance.database; //calls Database --> creates db
+    return await db.insert(_tableName, row); //returns unique ID
+  }
+
+  Future<List<Map<String, dynamic>>> queryAll() async{
+    Database db = await instance.database;
+    return await db.query(_tableName);
+  }
+
+  Future update(Map<String, dynamic> row) async{ //update info for a specific row (ID)
+    Database db = await instance.database;
+    int id = row[columnId];
+    return await db.update(_tableName, row, where: 'columnId = ?', whereArgs: [id]);
+  }
+  
+  Future<int> delete(int id) async{
+    Database db = await instance.database;
+    return await db.delete(_tableName, where: '$columnId = ?', whereArgs:[id]);
   }
 
 }
